@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.skyui.web">
+
+    <permission
+        android:name="cn.skyui.aidl.permission.SERVICE_PERMISSION"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:theme="@style/AppTheme.Base">
+        <activity
+            android:name="cn.skyui.library.web.activity.WebViewActivity"
+            android:process=":h5"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="cn.skyui.library.web.service.WebViewPreLoadService"
+            android:process=":h5"/>
+    </application>
+
+</manifest>

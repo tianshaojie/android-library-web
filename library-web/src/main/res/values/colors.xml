@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<color name="colorPrimary">#292836</color>
+	<color name="colorPrimaryDark">#292836</color>
+	<color name="colorAccent">#FF4081</color>
+
+	<color name="Pink400">#AB47BC</color>
+	<color name="Pink500">#E91E63</color>
+	<color name="Purple500">#9C27B0</color>
+
+	<color name="white">#FFFFFF</color>
+	<color name="background_color">#fff8f8f8</color>
+
+</resources>

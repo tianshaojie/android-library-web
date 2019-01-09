@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- swipeBack + 沉浸式状态栏 组合使用，在4.4系统需要设置为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Application主题即默认的Activity主题，设置为透明，配合swipeBack -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Splash直接设置背景，防止启动黑屏 -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

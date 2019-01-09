@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Base application theme. -->
+	<!--Application主题，即默认的Activity主题，设置为透明，可以配合swipeBack -->
+	<style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<!-- swipeBack + 沉浸式状态栏 组合使用，在4.4系统需要设置为透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!-- Application主题即默认的Activity主题，设置为透明，配合swipeBack -->
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+	<!-- Toolbar -->
+	<style name="Theme.Toolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+		<item name="titleMargin">0dp</item>
+		<!-- 修改toolbar中按钮图标的颜色 -->
+		<item name="colorControlNormal">@color/white</item>
+		<item name="android:actionButtonStyle">@style/ActionButtonStyle</item>
+		<item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item>
+	</style>
+
+	<!-- Toolbar Menu 间距 -->
+	<style name="ActionButtonStyle" parent="@style/Widget.AppCompat.ActionButton">
+		<item name="android:minWidth">@dimen/toolbar_height</item>
+		<item name="android:padding">0dp</item>
+	</style>
+
+	<!-- Toolbar 返回按钮 间距 -->
+	<style name="ToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+		<item name="android:minWidth">@dimen/toolbar_height</item>
+		<item name="android:padding">0dp</item>
+		<item name="android:scaleType">centerInside</item>
+	</style>
+
+	<!-- Toolbar 溢出图标颜色 -->
+	<style name="Theme.Toolbar.OverflowMenuTheme" parent="Theme.AppCompat.NoActionBar">
+		<!-- 设置Menu菜单背景色 -->
+		<item name="android:itemBackground">@android:color/white</item>
+		<!-- 设置Menu菜单字体颜色 -->
+		<item name="android:textColorPrimary">@android:color/black</item>
+		<!-- 设置Menu窗口不覆盖Toolbar视图 -->
+		<item name="overlapAnchor">false</item>
+	</style>
+
+</resources>
