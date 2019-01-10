@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btn_h5).setOnClickListener(v -> {
             Intent intent = new Intent(this, WebViewActivity.class);
-            intent.putExtra(WebViewActivity.URL, "http://skyui.cn/interest/h5.html");
+            intent.putExtra(WebViewActivity.URL, "http://skyui.cn/interest/lib-web.html");
             startActivity(intent);
         });
     }

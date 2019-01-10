@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="cn.skyui.ibrary.web">
 
-    <uses-permission android:name="cn.skyui.aidl.permission.SERVICE_PERMISSION"/>
+    <uses-permission android:name="cn.skyui.aidl.permission.SERVICE_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -25,15 +25,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
 
 
         <service
+            android:name=".service.WebViewBridgeService"
             android:exported="true"
-            android:name=".AppService"
             android:permission="cn.skyui.aidl.permission.SERVICE_PERMISSION">
             <intent-filter>
-                <action android:name="cn.skyui.aidl.IAppInterface"/>
+                <action android:name="cn.skyui.aidl.IAppInterface" />
             </intent-filter>
         </service>
     </application>
