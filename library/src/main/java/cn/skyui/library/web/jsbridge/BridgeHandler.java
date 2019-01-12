@@ -1,4 +1,4 @@
-package cn.skyui.app.library.web.jsbridge;
+package cn.skyui.library.web.jsbridge;
 
 public interface BridgeHandler {
 	

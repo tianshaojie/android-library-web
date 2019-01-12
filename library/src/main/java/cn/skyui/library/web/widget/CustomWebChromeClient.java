@@ -1,4 +1,4 @@
-package cn.skyui.app.library.web.widget;
+package cn.skyui.library.web.widget;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -13,7 +13,7 @@ import android.webkit.ValueCallback;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import cn.skyui.app.library.web.activity.WebViewActivity;
+import cn.skyui.library.web.activity.WebViewActivity;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;

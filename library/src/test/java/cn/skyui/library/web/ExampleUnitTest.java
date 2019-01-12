@@ -1,4 +1,4 @@
-package cn.skyui.app.web;
+package cn.skyui.library.web;
 
 import org.junit.Test;
 

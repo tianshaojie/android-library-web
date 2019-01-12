@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  */
 
-package cn.skyui.app.library.web.widget;
+package cn.skyui.library.web.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -27,8 +27,8 @@ import android.webkit.WebSettings;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
-import cn.skyui.app.web.R;
-import cn.skyui.app.library.web.jsbridge.BridgeWebView;
+import cn.skyui.library.web.R;
+import cn.skyui.library.web.jsbridge.BridgeWebView;
 
 /**
  * A convenient extension of WebView.

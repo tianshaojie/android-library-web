@@ -1,4 +1,4 @@
-package cn.skyui.app.library.web.activity;
+package cn.skyui.library.web.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.gyf.barlibrary.ImmersionBar;
-import cn.skyui.app.web.R;
+import cn.skyui.library.web.R;
 
 /**
  * 处理通用逻辑（二级界面请使用子类侧滑返回BaseSwipeBackActivity）

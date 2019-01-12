@@ -1,4 +1,4 @@
-package cn.skyui.app.library.web.service;
+package cn.skyui.library.web.service;
 
 import android.app.Service;
 import android.content.Context;

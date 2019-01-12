@@ -1,4 +1,4 @@
-package cn.skyui.app.library.web.widget;
+package cn.skyui.library.web.widget;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -6,8 +6,8 @@ import android.net.Uri;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 
-import cn.skyui.app.library.web.activity.WebViewActivity;
-import cn.skyui.app.library.web.jsbridge.BridgeWebViewClient;
+import cn.skyui.library.web.activity.WebViewActivity;
+import cn.skyui.library.web.jsbridge.BridgeWebViewClient;
 
 
 /**

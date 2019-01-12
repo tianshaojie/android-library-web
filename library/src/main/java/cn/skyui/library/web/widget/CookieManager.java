@@ -1,13 +1,13 @@
-package cn.skyui.app.library.web.widget;
+package cn.skyui.library.web.widget;
 
 import android.content.Context;
 import android.webkit.CookieSyncManager;
 
-//import cn.skyui.app.library.data.model.User;
-//import cn.skyui.app.library.http.model.Header;
-//import cn.skyui.app.library.utils.AppUtils;
-//import cn.skyui.app.library.utils.NetworkUtils;
-//import cn.skyui.app.library.utils.StringUtils;
+//import cn.skyui.library.data.model.User;
+//import cn.skyui.library.http.model.Header;
+//import cn.skyui.library.utils.AppUtils;
+//import cn.skyui.library.utils.NetworkUtils;
+//import cn.skyui.library.utils.StringUtils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
