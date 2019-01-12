@@ -1,4 +1,4 @@
-package cn.skyui.web;
+package cn.skyui.app.web;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cn.skyui.web.test", appContext.getPackageName());
+        assertEquals("cn.skyui.app.web.test", appContext.getPackageName());
     }
 }

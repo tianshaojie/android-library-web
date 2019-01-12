@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.skyui.web">
+    package="cn.skyui.app.web">
 
     <permission
         android:name="cn.skyui.aidl.permission.SERVICE_PERMISSION"
@@ -10,7 +10,7 @@
 
     <application android:theme="@style/AppTheme.Base">
         <activity
-            android:name="cn.skyui.library.web.activity.WebViewActivity"
+            android:name="cn.skyui.app.library.web.activity.WebViewActivity"
             android:label=""
             android:launchMode="singleTop"
             android:permission="cn.skyui.aidl.permission.SERVICE_PERMISSION"
@@ -18,7 +18,7 @@
             android:screenOrientation="portrait" />
 
         <service
-            android:name="cn.skyui.library.web.service.WebViewPreLoadService"
+            android:name="cn.skyui.app.library.web.service.WebViewPreLoadService"
             android:process=":h5" />
     </application>
 

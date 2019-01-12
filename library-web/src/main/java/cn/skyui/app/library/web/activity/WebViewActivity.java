@@ -1,4 +1,4 @@
-package cn.skyui.library.web.activity;
+package cn.skyui.app.library.web.activity;
 
 import android.annotation.SuppressLint;
 import android.content.ClipData;
@@ -25,12 +25,12 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import cn.skyui.aidl.IAppInterface;
-import cn.skyui.web.R;
-import cn.skyui.library.web.jsmethod.JavaScriptMethod;
-import cn.skyui.library.web.jsbridge.DefaultHandler;
-import cn.skyui.library.web.widget.CustomWebChromeClient;
-import cn.skyui.library.web.widget.CustomWebView;
-import cn.skyui.library.web.widget.CustomWebViewClient;
+import cn.skyui.app.web.R;
+import cn.skyui.app.library.web.jsmethod.JavaScriptMethod;
+import cn.skyui.app.library.web.jsbridge.DefaultHandler;
+import cn.skyui.app.library.web.widget.CustomWebChromeClient;
+import cn.skyui.app.library.web.widget.CustomWebView;
+import cn.skyui.app.library.web.widget.CustomWebViewClient;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

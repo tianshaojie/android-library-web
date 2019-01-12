@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import cn.skyui.library.web.activity.WebViewActivity;
+import cn.skyui.app.library.web.activity.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 

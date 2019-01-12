@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import cn.skyui.library.web.service.WebViewPreLoadService;
+import cn.skyui.app.library.web.service.WebViewPreLoadService;
 
 /**
  * @author tianshaojie

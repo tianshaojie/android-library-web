@@ -1,4 +1,4 @@
-package cn.skyui.library.web.jsbridge;
+package cn.skyui.app.library.web.jsbridge;
 
 import android.content.Context;
 import android.webkit.WebView;

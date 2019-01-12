@@ -1,4 +1,4 @@
-package cn.skyui.library.web.jsmethod;
+package cn.skyui.app.library.web.jsmethod;
 
 import android.content.Context;
 import android.os.RemoteException;
@@ -6,8 +6,8 @@ import android.util.Log;
 import android.widget.Toast;
 
 import cn.skyui.aidl.IAppInterface;
-import cn.skyui.library.web.jsbridge.BridgeHandler;
-import cn.skyui.library.web.jsbridge.CallBackFunction;
+import cn.skyui.app.library.web.jsbridge.BridgeHandler;
+import cn.skyui.app.library.web.jsbridge.CallBackFunction;
 
 import java.util.HashMap;
 
