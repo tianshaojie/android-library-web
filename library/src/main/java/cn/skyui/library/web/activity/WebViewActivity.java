@@ -60,7 +60,7 @@ public class WebViewActivity extends BaseWebViewActivity implements SwipeBackAct
     private SwipeBackActivityHelper mHelper;
     private CustomWebView mWebView;
     private JavaScriptMethod javaScriptMethod;
-    private String sourceUrl;       // 打开页面时的URL
+    private String sourceUrl;     // 打开页面时的URL
     private String currentUrl;    // 点击链接后的URL
 
     private IAppInterface appInterface;
@@ -83,7 +83,7 @@ public class WebViewActivity extends BaseWebViewActivity implements SwipeBackAct
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_webview);
+        setContentView(getContentViewLayout());
         setConfigCallback((WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE));
         initIntentData();
         if (sourceUrl == null || sourceUrl.length() == 0) {
@@ -93,6 +93,10 @@ public class WebViewActivity extends BaseWebViewActivity implements SwipeBackAct
         javaScriptMethod = new JavaScriptMethod(this);
         bindService();
         initView();
+    }
+
+    protected int getContentViewLayout() {
+        return R.layout.activity_webview;
     }
 
     @Override
@@ -166,6 +170,7 @@ public class WebViewActivity extends BaseWebViewActivity implements SwipeBackAct
 
     @Override
     protected void onDestroy() {
+        // 如果先调用destroy()方法，则会命中if (isDestroyed()) return;这一行代码，需要先onDetachedFromWindow()，再onDestroy
         if (mWebView != null) {
             ViewParent parent = mWebView.getParent();
             if (parent != null) {
@@ -173,6 +178,7 @@ public class WebViewActivity extends BaseWebViewActivity implements SwipeBackAct
             }
 
             mWebView.stopLoading();
+            // 退出时调用此方法，移除绑定的服务，否则某些特定系统会报错
             mWebView.getSettings().setJavaScriptEnabled(false);
             mWebView.clearHistory();
             mWebView.clearView();
