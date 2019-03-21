@@ -1,10 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.skyui.library.web">
 
-    <permission
-        android:name="cn.skyui.aidl.permission.SERVICE_PERMISSION"
-        android:protectionLevel="normal" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -13,7 +9,6 @@
             android:name="cn.skyui.library.web.activity.WebViewActivity"
             android:label=""
             android:launchMode="singleTop"
-            android:permission="cn.skyui.aidl.permission.SERVICE_PERMISSION"
             android:process=":h5"
             android:screenOrientation="portrait" />
 

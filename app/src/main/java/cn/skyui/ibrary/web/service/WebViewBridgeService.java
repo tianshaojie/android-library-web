@@ -2,11 +2,8 @@ package cn.skyui.ibrary.web.service;
 
 import android.app.Service;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.IBinder;
-import android.os.RemoteException;
 import android.support.annotation.Nullable;
-import android.widget.Toast;
 
 import cn.skyui.aidl.IAppInterface;
 
@@ -18,13 +15,9 @@ import cn.skyui.aidl.IAppInterface;
  */
 public class WebViewBridgeService extends Service {
 
-//    private static final String CUSTOM_PERMISSION = "cn.skyui.aidl.permission.SERVICE_PERMISSION";
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-//        if (checkCallingOrSelfPermission(CUSTOM_PERMISSION) == PackageManager.PERMISSION_DENIED) {
-//            return null;
-//        }
         return new AppBinder();
     }
 
